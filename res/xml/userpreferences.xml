@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="我的设置页面" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="PREF_CHECK_BOX"
+            android:summary="是否需要自动检测版本"
+            android:title="自动检测" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="个人信息" >
+        <EditTextPreference
+            android:dialogTitle="输入你的姓名"
+            android:summary="请手动输入你的姓名"
+            android:title="输入姓名" />
+    </PreferenceCategory>
+
+    <ListPreference
+        android:defaultValue="60"
+        android:dialogTitle="刷新地震"
+        android:entries="@array/update_fre_options"
+        android:entryValues="@array/update_fre_options"
+        android:key="UPDATE"
+        android:summary="选择好久跟新一次"
+        android:title="跟新频率" />
+    <ListPreference
+        android:defaultValue="3"
+        android:dialogTitle="震级"
+        android:entries="@array/magnitude"
+        android:entryValues="@array/uadate_freq_values"
+        android:key="MINVALUE"
+        android:summary="选择你要设置的最小震级"
+        android:title="最小震级" />
+
+    <RingtonePreference
+        android:key="ringtone_0"
+        android:ringtoneType="all"
+        android:showSilent="true"
+        android:summary="选择系统铃声A"
+        android:title="铃声设置" >
+    </RingtonePreference>
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/bg_tit_color"
+        android:entryValues="@array/colornumber"
+        android:key="bgtitcolor"
+        android:summary="选择你自己喜欢的风格"
+        android:title="风格颜色" />
+
+    <PreferenceCategory android:title="更多" >
+        <PreferenceScreen android:title="更多选项" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="cb21"
+                android:summaryOff="关闭"
+                android:summaryOn="开启"
+                android:title="功能1" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="cb22"
+                android:summaryOff="停用"
+                android:summaryOn="使用"
+                android:title="功能2" />
+
+            <ListPreference
+                android:dialogTitle="请选择论坛"
+                android:entries="@array/uadate_freq_values"
+                android:entryValues="@array/update_fre_options"
+                android:key="list1"
+                android:summary="开发论坛"
+                android:title="android forum" />
+
+            <EditTextPreference
+                android:defaultValue="Hello EditTextPreference"
+                android:dialogTitle="输入设置"
+                android:key="et1"
+                android:summary="点击输入"
+                android:title="EditTextPreference Sample" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

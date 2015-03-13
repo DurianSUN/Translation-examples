@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haoxin.trainingdemo"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- versionName是显示给公众看的，versionCode是用来判断版本迭代跟新的。都是整数 -->
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SettingActivity" >
+        </activity>
+        <activity android:name="com.haoxin.trainingdemo.PhoneListShowActivity" >
+        </activity>
+        <activity android:name="AnimotionDemoActivity" >
+        </activity>
+        <activity android:name=".tool.SelfSharedPreferenceActivity" >
+        </activity>
+        <activity android:name="MyPreferenceActivity" >
+        </activity>
+        <activity android:name="FragmentTestActivity" >
+        </activity>
+    </application>
+
+</manifest>

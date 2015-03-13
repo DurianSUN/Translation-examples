@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="update_fre_options">
+        <item>Every minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>Every Hour</item>
+    </string-array>
+    <string-array name="magnitude">
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="uadate_freq_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="bg_tit_color">
+        <item>紫色</item>
+        <item>红色</item>
+        <item>青色</item>
+        <item>粉色</item>
+        <item>蓝色</item>
+        <item>青色</item>
+        <item>橙色</item>
+        <item>黄色</item>
+    </string-array>
+    <string-array name="colornumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+</resources>
